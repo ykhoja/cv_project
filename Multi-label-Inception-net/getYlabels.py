@@ -12,7 +12,7 @@ m = len(data['annotations'])
 all_labels = []
 
 MIN_LABEL = 1
-MAX_LABEL = 15000
+MAX_LABEL = 7050
 
 for labels in data['annotations']:
 	imageId = int(labels['imageId'])
