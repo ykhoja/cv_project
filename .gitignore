@@ -14,7 +14,7 @@ Multi-label-inception-net/retrain_logs
 *.jpg.txt
 
 # Ignore .tgz
-#.tgz
+*.tgz
 
 # Ignore json
 *.json
