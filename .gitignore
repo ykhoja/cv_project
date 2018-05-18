@@ -7,8 +7,13 @@
 *.DS_store
 
 Multi-label-inception-net/model_dir/
-Multi-label-inception-net/retrain_logs
+Multi-label-inception-net/retrain_logs/
+inception-large/model_dir/
+inception-large/retrain_logs/
+inception-medium/model_dir/
+inception-medium/retrain_logs/
 *.pb
+*.cs231-vm
 
 # Ignore bottlenecks
 *.jpg.txt
