@@ -1,3 +1,10 @@
+# getYlabels.py extracts ground-truth information from train.json
+# input: train.json
+# outputs:
+# 	- .jpg.txt files with labels for each image
+#   - labels.txt file with a list of possible labels
+#   - labels_count.txt file with count of each label through the dataset
+
 import json
 import numpy as np
 
@@ -35,9 +42,11 @@ for labels in data['annotations']:
 
 	if imageId % 100000 == 0: print('%d / %d labels processed' % (imageId, m))
 
+# labels.txt contains the possible classes (one per line, not repeated)
 with open('labels.txt', 'w') as f:
 	for label in all_labels: f.write(label + '\n')
 
+# labels_count.txt will have stats on class imbalance
 with open('labels_count.txt', 'w') as f:
 	for label in sorted(count_labels, key=count_labels.get, reverse=True):
 		f.write('label: ' + label + ' count: ' + str(count_labels[label]) + '\n')  
