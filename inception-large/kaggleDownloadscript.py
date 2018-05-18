@@ -58,7 +58,7 @@ def parse_dataset(_dataset, _outdir, _min=0, _max=10000):
 if __name__ == '__main__':
     if len(sys.argv) != 5:
         print("error: not enough arguments")
-        print("usage: python kaggleDownloadscript.py train.json first_label_no last_label_no")
+        print("usage: python kaggleDownloadscript.py train.json out_dir first_label_no last_label_no")
         sys.exit(0)
 
     # get args and create output directory

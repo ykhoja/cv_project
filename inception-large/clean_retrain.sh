@@ -2,7 +2,7 @@
 
 # bottlenecks might take very long to create, so if there are no new images, consider using (not deleting) them
 
-rm -rf bottlenecks/multi-label
+rm -rf bottlenecks
 mkdir bottlenecks
 mkdir bottlenecks/multi-label
 
