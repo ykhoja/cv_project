@@ -144,3 +144,4 @@ ENV/
 # 68 landmark prediction model
 shape_predictor_68_face_landmarks.dat
 
+*.h5
